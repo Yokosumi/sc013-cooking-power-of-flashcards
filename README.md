@@ -10,7 +10,6 @@ This project uses:
 -   React
 -   Tailwind
 -   TypeScript
--   SASS
 
 ## Installation
 
