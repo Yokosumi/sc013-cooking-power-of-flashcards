@@ -1,7 +1,11 @@
+import { FlashCard } from './components/FlashCard'
 function App() {
     return (
         <>
-            <h1>Hello World</h1>
+            <div className="text-white">
+                <h1>Flashcards</h1>
+                <FlashCard />
+            </div>
         </>
     )
 }
