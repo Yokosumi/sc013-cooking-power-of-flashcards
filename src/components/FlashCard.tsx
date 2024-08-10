@@ -10,8 +10,13 @@ type FlashCardProps = {
 export const FlashCard = () => {
     const [flashCards, setFlashCards] = useState<FlashCardProps[]>([
         {
-            front: 'frontsite',
-            back: 'backsite',
+            front: 'How much is 1 + 2',
+            back: 'Answer: 3',
+            isFlipped: false,
+        },
+        {
+            front: 'How old can I cow become',
+            back: 'Answer: Cows can be up to 20 years',
             isFlipped: false,
         },
     ])
@@ -29,9 +34,9 @@ export const FlashCard = () => {
             {flashCards.map((card, index) => (
                 <div key={index} onClick={() => toggleFlashCard(index)}>
                     {!card.isFlipped ? (
-                        <Card display={flashCards[0].front} />
+                        <Card display={flashCards[index].front} />
                     ) : (
-                        <Card display={flashCards[0].back} />
+                        <Card display={flashCards[index].back} />
                     )}
                 </div>
             ))}
