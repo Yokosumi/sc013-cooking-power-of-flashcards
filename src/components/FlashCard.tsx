@@ -32,7 +32,11 @@ export const FlashCard = () => {
     return (
         <>
             {flashCards.map((card, index) => (
-                <div key={index} onClick={() => toggleFlashCard(index)}>
+                <div
+                    className="inline-block"
+                    key={index}
+                    onClick={() => toggleFlashCard(index)}
+                >
                     {!card.isFlipped ? (
                         <Card display={flashCards[index].front} />
                     ) : (
