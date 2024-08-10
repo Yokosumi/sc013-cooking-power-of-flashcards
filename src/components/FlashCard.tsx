@@ -19,7 +19,7 @@ export const FlashCard = () => {
         const copyOfFlashCardsState = [...flashCards, flashCard]
         setFlashCards(copyOfFlashCardsState)
     }
-    // find out how this function works
+
     const toggleFlashCard = (index: number) => {
         setFlashCards((prevFlashCards) =>
             prevFlashCards.map((card, i) =>
