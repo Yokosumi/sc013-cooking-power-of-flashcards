@@ -33,7 +33,7 @@ export const FlashCard = () => {
         <>
             {flashCards.map((card, index) => (
                 <div
-                    className="inline-block"
+                    className="inline"
                     key={index}
                     onClick={() => toggleFlashCard(index)}
                 >

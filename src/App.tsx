@@ -4,7 +4,9 @@ function App() {
         <>
             <div className=" text-white">
                 <h1>Flashcards</h1>
-                <FlashCard />
+                <section>
+                    <FlashCard />
+                </section>
             </div>
         </>
     )
