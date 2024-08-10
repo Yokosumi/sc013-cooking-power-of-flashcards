@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Card } from './Card'
 
 type FlashCardProps = {
     front: string
@@ -36,7 +37,11 @@ export const FlashCard = () => {
         <>
             {flashCards.map((card, index) => (
                 <div key={index} onClick={() => toggleFlashCard(index)}>
-                    {!card.isFlipped ? <p>{card.front}</p> : <p>{card.back}</p>}
+                    {!card.isFlipped ? (
+                        <Card display={flashCard.front} />
+                    ) : (
+                        <Card display={flashCard.back} />
+                    )}
                 </div>
             ))}
         </>
