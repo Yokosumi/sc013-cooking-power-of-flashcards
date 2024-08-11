@@ -12,13 +12,13 @@ export const FlashCard = () => {
     const [flashCards, setFlashCards] = useState<FlashCardProps[]>([
         {
             front: 'How much is 1 + 2',
-            back: 'Answer: 3',
+            back: '3',
             isFlipped: false,
             category: 'Math',
         },
         {
             front: 'How old can I cow become',
-            back: 'Answer: Cows can be up to 20 years',
+            back: 'Cows can be up to 20 years',
             isFlipped: false,
             category: 'Common Knowledge',
         },
@@ -42,8 +42,8 @@ export const FlashCard = () => {
                 >
                     {!card.isFlipped ? (
                         <Card
-                            display={flashCards[index].front}
-                            category={`'Category:' ${flashCards[index].category}`}
+                            display={`Answer: ${flashCards[index].front}`}
+                            category={`Category: ${flashCards[index].category}`}
                         />
                     ) : (
                         <Card display={flashCards[index].back} />
