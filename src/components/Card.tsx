@@ -10,9 +10,7 @@ export const Card = ({ display, category }: CardProps) => {
                 <div className="text-green-500 font-bold text-2xl text-center pointer">
                     {display}
                 </div>
-                <div className="text-white text-xl text-center">
-                    Category: {category}
-                </div>
+                <div className="text-white text-xl text-center">{category}</div>
             </section>
         </>
     )

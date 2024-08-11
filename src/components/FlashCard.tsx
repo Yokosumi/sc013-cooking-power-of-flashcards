@@ -43,7 +43,7 @@ export const FlashCard = () => {
                     {!card.isFlipped ? (
                         <Card
                             display={flashCards[index].front}
-                            category={flashCards[index].category}
+                            category={`'Category:' ${flashCards[index].category}`}
                         />
                     ) : (
                         <Card display={flashCards[index].back} />
