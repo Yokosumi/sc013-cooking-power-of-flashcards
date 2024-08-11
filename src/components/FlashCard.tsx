@@ -5,6 +5,7 @@ type FlashCardProps = {
     front: string
     back: string
     isFlipped: boolean
+    category: string
 }
 
 export const FlashCard = () => {
@@ -13,11 +14,13 @@ export const FlashCard = () => {
             front: 'How much is 1 + 2',
             back: 'Answer: 3',
             isFlipped: false,
+            category: 'Math',
         },
         {
             front: 'How old can I cow become',
             back: 'Answer: Cows can be up to 20 years',
             isFlipped: false,
+            category: 'Common Knowledge',
         },
     ])
 
