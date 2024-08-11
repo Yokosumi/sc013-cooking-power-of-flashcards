@@ -41,7 +41,10 @@ export const FlashCard = () => {
                     onClick={() => toggleFlashCard(index)}
                 >
                     {!card.isFlipped ? (
-                        <Card display={flashCards[index].front} />
+                        <Card
+                            display={flashCards[index].front}
+                            category={flashCards[index].category}
+                        />
                     ) : (
                         <Card display={flashCards[index].back} />
                     )}
