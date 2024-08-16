@@ -1,12 +1,6 @@
 import { useState } from 'react'
 import { Card } from './Card'
-
-type FlashCardProps = {
-    front: string
-    back: string
-    isFlipped: boolean
-    category: string
-}
+import type { FlashCardProps } from '../lib/types'
 
 export const FlashCard = () => {
     const [flashCards, setFlashCards] = useState<FlashCardProps[]>([
